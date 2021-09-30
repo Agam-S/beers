@@ -1,0 +1,5 @@
+<div class="container">
+  <input #input type="number" />
+  <button (click)="getSingleBeer()">Get Beer NOW!!!</button>
+</div>
+<app-beer-structure *ngIf="singleBeer" [beer]="singleBeer"></app-beer-structure>
